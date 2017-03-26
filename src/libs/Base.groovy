@@ -24,6 +24,7 @@ class Base implements Serializable {
       CHANGE_AUTHOR_EMAIL: ${this.ctx.env.CHANGE_AUTHOR_EMAIL}
       CHANGE_TARGET: ${this.ctx.env.CHANGE_TARGET}
       WORKSPACE: ${this.ctx.env.WORKSPACE}
+      SCM: ${this.ctx.scm.url}
     """)
   }
 
