@@ -1,6 +1,8 @@
 /**
  * Created by hoanvo on 3/26/17.
  */
+package libs
+
 class Base implements Serializable {
   def ctx
   String orgName
