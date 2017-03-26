@@ -14,6 +14,17 @@ class Base implements Serializable {
 
   void build() {
     this.ctx.println("Run the build steps from shared libs")
+    this.ctx.println("""
+      the info: ${this.ctx.env.BRANCH_NAME}
+      CHANGE_ID: ${this.ctx.CHANGE_ID}
+      CHANGE_URL: ${CHANGE_URL}
+CHANGE_TITLE: ${CHANGE_TITLE}
+CHANGE_AUTHOR: ${CHANGE_AUTHOR}
+CHANGE_AUTHOR_DISPLAY_NAME: ${CHANGE_AUTHOR_DISPLAY_NAME}
+CHANGE_AUTHOR_EMAIL: ${CHANGE_AUTHOR_EMAIL}
+CHANGE_TARGET: ${CHANGE_TARGET}
+WORKSPACE: ${WORKSPACE}
+    """)
   }
 
   void deploy() {
