@@ -6,6 +6,7 @@ package libs
 class Base implements Serializable {
   def ctx
   String orgName
+  boolean stageErrors = false
 
   Base(paramsMap) {
     this.ctx = paramsMap.ctx
@@ -33,5 +34,7 @@ class Base implements Serializable {
     } else {
       this.ctx.println("Don't run the deploy steps from shared libs")
     }
+
+    this.stageErrors = true
   }
 }
