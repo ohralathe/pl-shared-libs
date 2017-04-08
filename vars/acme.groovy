@@ -1,5 +1,3 @@
-import src.libs.Consts
-
 def setName(value) {
   name = value
 }
